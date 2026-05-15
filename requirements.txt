@@ -1,0 +1,14 @@
+beautifulsoup4>=4.12
+gradio>=4.44
+ipykernel>=6.29
+nbclient>=0.10
+nbformat>=5.10
+numpy>=1.26
+openai>=1.40
+pandas>=2.2
+rank-bm25>=0.2.2
+scikit-learn>=1.5
+sentence-transformers>=3.0
+torch>=2.3
+transformers>=4.44
+tqdm>=4.66

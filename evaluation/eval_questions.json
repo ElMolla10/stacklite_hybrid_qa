@@ -1,0 +1,62 @@
+[
+  {
+    "id": "eval_01",
+    "question": "How should I interpret micro average versus macro average metrics for imbalanced multiclass classification?",
+    "relevant_doc_ids": ["datascience:15989"],
+    "expected_citation": "Micro Average vs Macro average Performance in a Multiclass classification setting"
+  },
+  {
+    "id": "eval_02",
+    "question": "What is the difference between fit and fit_transform in scikit-learn preprocessing or modeling?",
+    "relevant_doc_ids": ["datascience:12321"],
+    "expected_citation": "What's the difference between fit and fit_transform in scikit-learn models?"
+  },
+  {
+    "id": "eval_03",
+    "question": "How can Keras class weights help when the training data has imbalanced classes?",
+    "relevant_doc_ids": ["datascience:13490"],
+    "expected_citation": "How to set class weights for imbalanced classes in Keras?"
+  },
+  {
+    "id": "eval_04",
+    "question": "When should I use one hot encoding instead of label encoding for categorical variables?",
+    "relevant_doc_ids": ["datascience:9443"],
+    "expected_citation": "When to use One Hot Encoding vs LabelEncoder vs DictVectorizor?"
+  },
+  {
+    "id": "eval_05",
+    "question": "Why do transformer models need positional encodings?",
+    "relevant_doc_ids": ["datascience:51065"],
+    "expected_citation": "What is the positional encoding in the transformer model?"
+  },
+  {
+    "id": "eval_06",
+    "question": "What is the practical difference between model-based and model-free reinforcement learning?",
+    "relevant_doc_ids": ["ai:4456"],
+    "expected_citation": "What's the difference between model-free and model-based reinforcement learning?"
+  },
+  {
+    "id": "eval_07",
+    "question": "What does self-supervised learning mean in machine learning?",
+    "relevant_doc_ids": ["ai:10623"],
+    "expected_citation": "What is self-supervised learning in machine learning?"
+  },
+  {
+    "id": "eval_08",
+    "question": "Why can transformers handle long-range dependencies better than RNNs or LSTMs?",
+    "relevant_doc_ids": ["ai:20075"],
+    "expected_citation": "Why does the transformer do better than RNN and LSTM in long-range context dependencies?"
+  },
+  {
+    "id": "eval_09",
+    "question": "How does ChatGPT keep track of context from previous questions in a conversation?",
+    "relevant_doc_ids": ["ai:38150"],
+    "expected_citation": "How does ChatGPT retain the context of previous questions?"
+  },
+  {
+    "id": "eval_10",
+    "question": "What does temperature control in GPT style language models?",
+    "relevant_doc_ids": ["ai:32477"],
+    "expected_citation": "What is the \"temperature\" in the GPT models?"
+  }
+]
