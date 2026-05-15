@@ -1,5 +1,6 @@
 import json
 import itertools
+import textwrap
 from pathlib import Path
 
 
@@ -16,7 +17,7 @@ def md(source: str) -> dict:
         "cell_type": "markdown",
         "id": f"cell-{next(CELL_IDS):03d}",
         "metadata": {},
-        "source": source.strip().splitlines(True),
+        "source": textwrap.dedent(source).strip().splitlines(True),
     }
 
 
@@ -27,7 +28,7 @@ def code(source: str) -> dict:
         "execution_count": None,
         "metadata": {},
         "outputs": [],
-        "source": source.strip().splitlines(True),
+        "source": textwrap.dedent(source).strip().splitlines(True),
     }
 
 

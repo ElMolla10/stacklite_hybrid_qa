@@ -2,7 +2,7 @@
 
 ## 1. Goal and Corpus
 
-The project builds a question-answering assistant for technical AI and data-science questions. The provided dataset archive contains two Stack Exchange JSON files: `top_datascience_questions.json` and `top_ai_questions.json`. Each record includes a title, HTML body, tags, score, question ID, and source URL. The implementation converts each question into one searchable passage and assigns a stable document ID such as `datascience:12321` or `ai:10623`.
+The project builds a question-answering assistant for technical AI and data-science questions. The provided course dataset archive, `/Users/mohamedehabelmolla/Downloads/DataSet.zip`, contains two Stack Exchange JSON files: `top_datascience_questions.json` and `top_ai_questions.json`. Each record includes a title, HTML body, tags, score, question ID, and source URL. The extracted corpus used in the local run contains 1,500 question records. The implementation converts each question into one searchable passage and assigns a stable document ID such as `datascience:12321` or `ai:10623`.
 
 The system supports four user-facing requirements: index the document set, retrieve relevant passages, generate grounded answers with citations, and provide an interactive Gradio interface for live testing.
 
@@ -52,7 +52,7 @@ The extractive fallback is included for reliability. It selects high-overlap sen
 
 ## 3. Evaluation
 
-The evaluation file contains 10 paraphrased questions with explicit relevant document IDs. The provided script reports MAP@10, MRR@10, nDCG@10, and HitRate@10 for BM25, MiniLM dense retrieval, and hybrid RRF.
+The evaluation file contains 10 paraphrased questions with explicit relevant document IDs. This is a sanity-check evaluation set for the supplied corpus, not a large benchmark. The provided script reports MAP@10, MRR@10, nDCG@10, and HitRate@10 for BM25, MiniLM dense retrieval, and hybrid RRF.
 
 The evaluation set was designed to cover both data-science and AI topics: scikit-learn preprocessing, Keras class weighting, categorical encoding, transformer positional encoding, model-based reinforcement learning, self-supervised learning, conversational context in ChatGPT, and GPT temperature. Each evaluation item includes one target document ID. This makes the metrics easy to interpret: MAP and MRR reward placing that document high, nDCG rewards top-heavy ranking quality, and HitRate confirms whether the target appears anywhere in the first ten results.
 

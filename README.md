@@ -1,6 +1,6 @@
 # StackLite Hybrid QA
 
-Question-answering assistant for technical AI/data-science questions over the provided StackLite-6K-style corpus archive.
+Question-answering assistant for technical AI/data-science questions over the provided StackLite corpus archive.
 
 ## What It Includes
 
@@ -11,6 +11,15 @@ Question-answering assistant for technical AI/data-science questions over the pr
 - RAG answer generation with citations using either HuggingFace FLAN-T5, OpenAI, or a local extractive fallback.
 - Gradio UI for live Q&A.
 - Colab-ready demo notebook in `notebooks/StackLite_Hybrid_QA_Demo.ipynb`.
+
+## Dataset
+
+The project was built and evaluated on the provided dataset archive at `/Users/mohamedehabelmolla/Downloads/DataSet.zip`. The extracted files are committed under `data/`:
+
+- `data/top_ai_questions.json`
+- `data/top_datascience_questions.json`
+
+These two files contain 1,500 Stack Exchange records from the supplied StackLite dataset. See `data/README.md` for file sizes and replacement instructions for a larger StackLite-6K export.
 
 ## Quick Start
 
@@ -52,4 +61,5 @@ The first dense run downloads MiniLM. In Colab, select a T4/V100 GPU runtime bef
 - Citation quality examples: `docs/citation_quality.md`
 - Short report: `docs/report.md`
 - Video walkthrough: `video/stacklite_hybrid_qa_demo.mp4`
+- Public GitHub video link: https://github.com/ElMolla10/stacklite_hybrid_qa/blob/main/video/stacklite_hybrid_qa_demo.mp4
 - Video walkthrough guide: `docs/video_demo_script.md`
