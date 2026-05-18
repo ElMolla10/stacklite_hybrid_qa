@@ -14,7 +14,7 @@ Question-answering assistant for technical AI/data-science questions over the pr
 
 ## Dataset
 
-The project was built and evaluated on the provided dataset archive at `/Users/mohamedehabelmolla/Downloads/DataSet.zip`. The extracted files are committed under `data/`:
+The project was built and evaluated on the provided dataset archive (StackLite corpus). The extracted files are committed under `data/`:
 
 - `data/top_ai_questions.json`
 - `data/top_datascience_questions.json`
@@ -24,7 +24,8 @@ These two files contain 1,500 Stack Exchange records from the supplied StackLite
 ## Quick Start
 
 ```bash
-cd /Users/mohamedehabelmolla/stacklite_hybrid_qa
+git clone https://github.com/ElMolla10/stacklite_hybrid_qa.git
+cd stacklite_hybrid_qa
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 .venv/bin/python scripts/evaluate.py --skip-dense
@@ -47,11 +48,11 @@ The first dense run downloads MiniLM. In Colab, select a T4/V100 GPU runtime bef
 
 ## Team Log
 
-| Role | Work |
+| Name | Work |
 | --- | --- |
-| Member 1 | Corpus loading, preprocessing, BM25 retrieval. |
-| Member 2 | Dense retrieval, RRF fusion, evaluation metrics. |
-| Member 3 | RAG generation, citations, Gradio UI, report/demo packaging. |
+| Mohamed Ehab | Corpus loading, preprocessing, BM25 retrieval. |
+| Yahia Abdelmoneam | Dense retrieval, RRF fusion, evaluation metrics. |
+| Mohamed Atef | RAG generation, citations, Gradio UI, report/demo packaging. |
 
 ## Submission Checklist
 

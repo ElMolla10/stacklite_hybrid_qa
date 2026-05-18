@@ -1,12 +1,6 @@
 # Data
 
-This project uses the provided StackLite corpus archive from:
-
-```text
-/Users/mohamedehabelmolla/Downloads/DataSet.zip
-```
-
-The archive was extracted into:
+This project uses the provided StackLite corpus archive (supplied as `DataSet.zip`). The archive was extracted into:
 
 - `top_ai_questions.json`
 - `top_datascience_questions.json`
