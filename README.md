@@ -28,17 +28,10 @@ git clone https://github.com/ElMolla10/stacklite_hybrid_qa.git
 cd stacklite_hybrid_qa
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
-.venv/bin/python scripts/evaluate.py --skip-dense
 .venv/bin/python app.py
 ```
 
-For full dense retrieval and hybrid evaluation:
-
-```bash
-.venv/bin/python scripts/evaluate.py
-```
-
-The first dense run downloads MiniLM. In Colab, select a T4/V100 GPU runtime before running the notebook cells.
+The first run in Hybrid mode downloads MiniLM. In Colab, select a T4/V100 GPU runtime before running the notebook cells.
 
 ## Optional Generation Backends
 
@@ -57,10 +50,8 @@ The first dense run downloads MiniLM. In Colab, select a T4/V100 GPU runtime bef
 ## Submission Checklist
 
 - Demo notebook: `notebooks/StackLite_Hybrid_QA_Demo.ipynb`
-- Code: `stacklite_qa/core.py`, `app.py`, `scripts/evaluate.py`
+- Code: `stacklite_qa/core.py`, `app.py`
 - Evaluation questions: `evaluation/eval_questions.json`
-- Citation quality examples: `docs/citation_quality.md`
-- Short report: `docs/report.md`
+- Short report: `docs/report.pdf`
 - Video walkthrough: `video/stacklite_hybrid_qa_demo.mp4`
 - Public GitHub video link: https://github.com/ElMolla10/stacklite_hybrid_qa/blob/main/video/stacklite_hybrid_qa_demo.mp4
-- Video walkthrough guide: `docs/video_demo_script.md`
