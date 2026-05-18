@@ -2,7 +2,7 @@
 
 ## 1. Goal and Corpus
 
-The project builds a question-answering assistant for technical AI and data-science questions. The provided course dataset archive, `/Users/mohamedehabelmolla/Downloads/DataSet.zip`, contains two Stack Exchange JSON files: `top_datascience_questions.json` and `top_ai_questions.json`. Each record includes a title, HTML body, tags, score, question ID, and source URL. The extracted corpus used in the local run contains 1,500 question records. The implementation converts each question into one searchable passage and assigns a stable document ID such as `datascience:12321` or `ai:10623`.
+The project builds a question-answering assistant for technical AI and data-science questions. The provided course dataset archive (`DataSet.zip`) contains two Stack Exchange JSON files: `top_datascience_questions.json` and `top_ai_questions.json`. Each record includes a title, HTML body, tags, score, question ID, and source URL. The extracted corpus used in the local run contains 1,500 question records. The implementation converts each question into one searchable passage and assigns a stable document ID such as `datascience:12321` or `ai:10623`.
 
 The system supports four user-facing requirements: index the document set, retrieve relevant passages, generate grounded answers with citations, and provide an interactive Gradio interface for live testing.
 
