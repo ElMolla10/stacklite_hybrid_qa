@@ -161,5 +161,6 @@ Each record contains a title, HTML body, tags, score, question ID, and source UR
 | Core library | `stacklite_qa/core.py` |
 | Gradio app | `app.py` |
 | Evaluation set | `evaluation/eval_questions.json` |
+| Citation quality examples | `docs/citation_quality.md` |
 | Report | `docs/report.pdf` |
 | Video walkthrough | [`video/stacklite_hybrid_qa_demo.mp4`](https://github.com/ElMolla10/stacklite_hybrid_qa/blob/main/video/stacklite_hybrid_qa_demo.mp4) |
